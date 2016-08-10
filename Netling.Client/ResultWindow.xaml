@@ -60,5 +60,6 @@
                 </ListView>
             </TabItem>
         </TabControl>
+        <CheckBox x:Name="cbADA" Content="SHOW BACKGROUND HASH" HorizontalAlignment="Left" Margin="0,51.4,0,0" Grid.Row="2" VerticalAlignment="Top" Checked="cbADA_Checked" Unchecked="cbADA_Unchecked" Grid.ColumnSpan="2" Grid.RowSpan="2" IsChecked="False"/>
     </Grid>
 </Window>

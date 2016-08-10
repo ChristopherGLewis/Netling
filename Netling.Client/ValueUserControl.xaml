@@ -6,8 +6,26 @@
              xmlns:local="clr-namespace:Netling.Client"
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="300" VerticalContentAlignment="Top">
+    <UserControl.Resources>
+        <VisualBrush x:Key="RedHash" TileMode="Tile" Viewport="0,0,15,15" ViewportUnits="Absolute" Viewbox="0,0,15,15" ViewboxUnits="Absolute" Opacity="0.5">
+            <VisualBrush.Visual>
+                <Grid >
+                    <Path Data="M 0 15 L 15 0" Stroke="Red" />
+                    <Path Data="M 0 0 L 15 15" Stroke="Red" />
+                </Grid>
+            </VisualBrush.Visual>
+        </VisualBrush>
+        <VisualBrush x:Key="GreenHash" TileMode="Tile" Viewport="0,0,15,15" ViewportUnits="Absolute" Viewbox="0,0,15,15" ViewboxUnits="Absolute" Opacity="0.55">
+            <VisualBrush.Visual>
+                <Grid >
+                    <Path Data="M 0 7 L 15 7" Stroke="Green"/>
+                    <Path Data="M 7 0 L 7 15" Stroke="Green"/>
+                </Grid>
+            </VisualBrush.Visual>
+        </VisualBrush>
+    </UserControl.Resources>
     <Grid Margin="0,0,0,20">
-        <Border BorderThickness="4,0,0,0" BorderBrush="DarkGray" x:Name="ValueBorder">
+        <Border BorderThickness="4,0,0,0" x:Name="ValueBorder" BorderBrush="DarkGray"  >
             <Grid Margin="10,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>

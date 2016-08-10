@@ -159,6 +159,27 @@ namespace Netling.Client
 
             return v1 > v2 ? new SolidColorBrush(Colors.Green) : new SolidColorBrush(Colors.Red);
         }
+
+        private void cbADA_Checked(object sender, RoutedEventArgs e)
+        {
+            SetValueUserControlsADA(true);
+        }
+
+        private void cbADA_Unchecked(object sender, RoutedEventArgs e)
+        {
+            SetValueUserControlsADA(false);
+        }
+
+        private void SetValueUserControlsADA(bool value)
+        {
+            RequestsValueUserControl.UseADA = value;
+            BandwidthValueUserControl.UseADA = value;
+            ErrorsValueUserControl.UseADA = value;
+            MedianValueUserControl.UseADA = value;
+            StdDevValueUserControl.UseADA = value;
+            MinValueUserControl.UseADA = value;
+            MaxValueUserControl.UseADA = value;
+        }
     }
 
     internal class JobTaskResult
